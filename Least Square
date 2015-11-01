@@ -1,0 +1,47 @@
+Least Square
+
+Basic:
+F(x) = \|Ax - y\|^2,
+where A is a matrix of NxD, x is a vector of Dx1, y is a vector of Nx1
+
+Normal equation:
+A'Ax = A'y
+
+Brute force:
+x = (A'A)^{-1}A'y
+
+Problem:
+A'A: a matrix of DxD, computing inv(A'A) has the complexity of O(D^3)
+
+Two other numerical options for solving Normal equation:
+1. Cholesky factorization (faster than 2)
+2. QR factorization (better numerical properties, numerically stable)
+
+Cholesky factorization:
+C = A'A, O(ND^2)
+C = LL', O((1/3)D^3)
+i) A'Ax = A'y =>
+ii) LL'x = A'y =>
+iii) LL'x = b =>
+iv) Lz = b =>
+v) L'x = z
+
+Note: L is lower triangluar, such that solving iv) and v) can be performed using forward substitution and backward substitution
+A proud of China: "Nine Chapters on Arithmetic"
+
+QR:
+A = QR
+i) A'Ax = A'y =>
+ii) R'QQ'Rx = R'Qy =>
+iii) R'Rx = R'Qy =>
+iv) Rx = Qy =>
+v) Rx = b
+
+Note for Cholesky and QR
+i) We can skip how to compute Cholesky and QR decomposition in implementing Least Square.
+ii) Cholesky is faster than QR, especially when A is large and sparse
+iii) In practice, QR is more preferred
+
+Reference:
+[1] http://www.seas.ucla.edu/~vandenbe/103/lectures/qr.pdf
+
