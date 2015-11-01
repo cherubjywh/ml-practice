@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3C96DE61BE6931400751BC4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C96DE51BE6931400751BC4 /* main.cpp */; };
+		B3C96DEF1BE696D200751BC4 /* linear_regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C96DED1BE696D200751BC4 /* linear_regression.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		B3C96DE21BE6931400751BC4 /* ml-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ml-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3C96DE51BE6931400751BC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B3C96DE51BE6931400751BC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../core/main.cpp; sourceTree = "<group>"; };
+		B3C96DED1BE696D200751BC4 /* linear_regression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = linear_regression.cpp; path = linear_model/linear_regression.cpp; sourceTree = "<group>"; };
+		B3C96DEE1BE696D200751BC4 /* linear_regression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linear_regression.h; path = linear_model/linear_regression.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +44,8 @@
 		B3C96DD91BE6931400751BC4 = {
 			isa = PBXGroup;
 			children = (
-				B3C96DE41BE6931400751BC4 /* ml-practice */,
+				B3C96DEC1BE696A000751BC4 /* linear_model */,
+				B3C96DE41BE6931400751BC4 /* core */,
 				B3C96DE31BE6931400751BC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +58,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3C96DE41BE6931400751BC4 /* ml-practice */ = {
+		B3C96DE41BE6931400751BC4 /* core */ = {
 			isa = PBXGroup;
 			children = (
 				B3C96DE51BE6931400751BC4 /* main.cpp */,
 			);
+			name = core;
 			path = "ml-practice";
+			sourceTree = "<group>";
+		};
+		B3C96DEC1BE696A000751BC4 /* linear_model */ = {
+			isa = PBXGroup;
+			children = (
+				B3C96DED1BE696D200751BC4 /* linear_regression.cpp */,
+				B3C96DEE1BE696D200751BC4 /* linear_regression.h */,
+			);
+			name = linear_model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C96DE61BE6931400751BC4 /* main.cpp in Sources */,
+				B3C96DEF1BE696D200751BC4 /* linear_regression.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +173,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-larmadillo";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -193,8 +215,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-larmadillo";
 				SDKROOT = macosx;
 			};
 			name = Release;

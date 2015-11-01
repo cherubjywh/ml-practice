@@ -15,7 +15,7 @@ namespace regression {
     class LinearRegression {
     public:
         LinearRegression(const arma::mat& predicators,
-                         const arma::mat& response,
+                         const arma::mat& responses,
                          const double lambda = 0,
                          const bool intercept = true,
                          const arma::vec& weights = arma::vec());

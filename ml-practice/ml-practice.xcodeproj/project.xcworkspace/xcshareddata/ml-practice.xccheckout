@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E2304A63-D8D8-4E7E-8683-3A289319E2EC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ml-practice</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2AFC64FD026F2108E2DCFB62CA852DA1005F488F</key>
+		<string>https://github.com/cherubjywh/ml-practice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ml-practice/ml-practice.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2AFC64FD026F2108E2DCFB62CA852DA1005F488F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cherubjywh/ml-practice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2AFC64FD026F2108E2DCFB62CA852DA1005F488F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2AFC64FD026F2108E2DCFB62CA852DA1005F488F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ml-practice</string>
+		</dict>
+	</array>
+</dict>
+</plist>
