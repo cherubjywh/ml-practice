@@ -15,3 +15,7 @@ ii) (A'A + (\lambda^{0.5}I)'(\lambda^{0.5}))x = A'b =>
 iii) [A; \lambda^{0.5}I]'[A; \lambda^{0.5}I] x = [A; \lambda^{0.5}I]' [b; 0] =>
 iv) B'Bx = Bc, where B = [A; \lambda^{0.5} I], c = [b; 0]
 v) B = QR
+
+
+Reference:
+[1] http://math.stackexchange.com/questions/299481/qr-factorization-for-ridge-regression
