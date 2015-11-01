@@ -1,0 +1,17 @@
+#Ridge Regression
+
+Basic, Least Square:
+F(x) = \|Ax - y\|^2
+
+Ridge Regression:
+F(x) = \|Ax - y\|^2 + \lambda \|x\|^2
+
+Normal Equation (with regularization term):
+(A'A + \lambda I)x = A'b
+
+Transformation (rewriting):
+i) (A'A + \lambda I)x = A'b =>
+ii) (A'A + (\lambda^{0.5}I)'(\lambda^{0.5}))x = A'b =>
+iii) [A; \lambda^{0.5}I]'[A; \lambda^{0.5}I] x = [A; \lambda^{0.5}I]' [b; 0] =>
+iv) B'Bx = Bc, where B = [A; \lambda^{0.5} I], c = [b; 0]
+v) B = QR
