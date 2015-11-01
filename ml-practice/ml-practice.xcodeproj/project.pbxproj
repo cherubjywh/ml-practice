@@ -44,6 +44,7 @@
 		B3C96DD91BE6931400751BC4 = {
 			isa = PBXGroup;
 			children = (
+				B3C96DF01BE6BDED00751BC4 /* test */,
 				B3C96DEC1BE696A000751BC4 /* linear_model */,
 				B3C96DE41BE6931400751BC4 /* core */,
 				B3C96DE31BE6931400751BC4 /* Products */,
@@ -74,6 +75,13 @@
 				B3C96DEE1BE696D200751BC4 /* linear_regression.h */,
 			);
 			name = linear_model;
+			sourceTree = "<group>";
+		};
+		B3C96DF01BE6BDED00751BC4 /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +269,7 @@
 				B3C96DEB1BE6931400751BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,8 +19,8 @@ namespace regression {
                          const double lambda = 0,
                          const bool intercept = true,
                          const arma::vec& weights = arma::vec());
-        LinearRegression(const std::string& filename);
-        LinearRegression(const LinearRegression* linearRegression);
+//        LinearRegression(const std::string& filename);
+        LinearRegression(const LinearRegression& linearRegression);
         LinearRegression() {}
         
         void Predict (const arma::mat& points, arma::vec & predicts) const;
@@ -34,7 +34,7 @@ namespace regression {
         double Lambda () const {return lambda;}
         double& Lambda () {return lambda;}
         
-        std::string ToString () const;
+//        std::string ToString () const;
         
     private:
         arma::vec parameters;

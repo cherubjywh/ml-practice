@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>test_linear_regression.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>B3C96DE11BE6931400751BC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3C96DF41BE6C21500751BC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
