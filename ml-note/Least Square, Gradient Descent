@@ -1,0 +1,25 @@
+# Gradient descent
+
+F(x) 
+= \frac{1}{2}[\|Ax - y\|^2 + \lambda \|x\|^2]
+= \frac{1}{2}[(Ax - y)'(Ax - y) + \lambda x'x]
+
+\partial F(x)/ \partial x
+= A'(Ax - y) + \labmda x
+
+A: a matrix of size NxD, where N is the number of instances, and D is the number of feature dimensions
+x: a vector of size Dx1, where D is the number of feature dimensions
+y: a vector of size Nx1, where N is the number of instances
+
+Note:
+1. Normalize features before gradident descent ==> related to convergence rate
+  1.1 Normalize features onto unit ball
+  1.2 Min-max normalization
+  1.3 Whitening, 0 mean and 1 variance
+  1.4 etc.
+2. Learning rate (step-size), how to decide, how to diagnose whether a step-size is too large or too small
+  2.1 I want to read some related material for line search, here
+3. When applying the trained models, need to apply the same normalization to the test instances
+4. Call existing library, e.g. BFGS. I want to do this
+5. Very important: check whether the gradient computation is correctly implemented. The checking can be done using finit difference
+https://v8doc.sas.com/sashtml/ormp/chap5/sect28.htm
