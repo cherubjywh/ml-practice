@@ -14,9 +14,16 @@ using namespace arma;
 
 int main(int argc, const char * argv[]) {
     
-    mat A;
-    A.randu(4, 3);
-    A.print("A Random Matrix");
+    arma::mat A;
+    A << 0 << arma::endr
+    << 1;
+    
+    arma::mat y;
+    y << 0.5 << arma::endr << 1;
+    
+    LinearRegression lr(A, y);
+    
+    auto parameters = lr.Parameters();
     
     return 0;
 }

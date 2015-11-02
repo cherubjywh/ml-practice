@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3C96DE61BE6931400751BC4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C96DE51BE6931400751BC4 /* main.cpp */; };
+		B36EF0D31BE6EFB50090CF3F /* test_least_square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B36EF0C71BE6EE4D0090CF3F /* test_least_square.cpp */; };
+		B36EF0D41BE6F99F0090CF3F /* linear_regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C96DED1BE696D200751BC4 /* linear_regression.cpp */; };
+		B36EF0D61BE6F9C30090CF3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B36EF0D51BE6F9C30090CF3F /* main.cpp */; };
 		B3C96DEF1BE696D200751BC4 /* linear_regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C96DED1BE696D200751BC4 /* linear_regression.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B36EF0CA1BE6EFA80090CF3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B3C96DE01BE6931400751BC4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,13 +35,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B36EF0C71BE6EE4D0090CF3F /* test_least_square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test_least_square.cpp; path = test/test_least_square.cpp; sourceTree = "<group>"; };
+		B36EF0CC1BE6EFA80090CF3F /* test_least_square */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_least_square; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36EF0D51BE6F9C30090CF3F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = core/main.cpp; sourceTree = SOURCE_ROOT; };
 		B3C96DE21BE6931400751BC4 /* ml-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ml-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3C96DE51BE6931400751BC4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../core/main.cpp; sourceTree = "<group>"; };
 		B3C96DED1BE696D200751BC4 /* linear_regression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = linear_regression.cpp; path = linear_model/linear_regression.cpp; sourceTree = "<group>"; };
 		B3C96DEE1BE696D200751BC4 /* linear_regression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linear_regression.h; path = linear_model/linear_regression.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B36EF0C91BE6EFA80090CF3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3C96DDF1BE6931400751BC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C96DE21BE6931400751BC4 /* ml-practice */,
+				B36EF0CC1BE6EFA80090CF3F /* test_least_square */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +83,7 @@
 		B3C96DE41BE6931400751BC4 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				B3C96DE51BE6931400751BC4 /* main.cpp */,
+				B36EF0D51BE6F9C30090CF3F /* main.cpp */,
 			);
 			name = core;
 			path = "ml-practice";
@@ -80,6 +101,7 @@
 		B3C96DF01BE6BDED00751BC4 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				B36EF0C71BE6EE4D0090CF3F /* test_least_square.cpp */,
 			);
 			name = test;
 			sourceTree = "<group>";
@@ -87,6 +109,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B36EF0CB1BE6EFA80090CF3F /* test_least_square */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36EF0D01BE6EFA80090CF3F /* Build configuration list for PBXNativeTarget "test_least_square" */;
+			buildPhases = (
+				B36EF0C81BE6EFA80090CF3F /* Sources */,
+				B36EF0C91BE6EFA80090CF3F /* Frameworks */,
+				B36EF0CA1BE6EFA80090CF3F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test_least_square;
+			productName = test_least_square;
+			productReference = B36EF0CC1BE6EFA80090CF3F /* test_least_square */;
+			productType = "com.apple.product-type.tool";
+		};
 		B3C96DE11BE6931400751BC4 /* ml-practice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3C96DE91BE6931400751BC4 /* Build configuration list for PBXNativeTarget "ml-practice" */;
@@ -113,6 +152,9 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Yuyin Sun";
 				TargetAttributes = {
+					B36EF0CB1BE6EFA80090CF3F = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					B3C96DE11BE6931400751BC4 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -131,16 +173,26 @@
 			projectRoot = "";
 			targets = (
 				B3C96DE11BE6931400751BC4 /* ml-practice */,
+				B36EF0CB1BE6EFA80090CF3F /* test_least_square */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B36EF0C81BE6EFA80090CF3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36EF0D31BE6EFB50090CF3F /* test_least_square.cpp in Sources */,
+				B36EF0D41BE6F99F0090CF3F /* linear_regression.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3C96DDE1BE6931400751BC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C96DE61BE6931400751BC4 /* main.cpp in Sources */,
+				B36EF0D61BE6F9C30090CF3F /* main.cpp in Sources */,
 				B3C96DEF1BE696D200751BC4 /* linear_regression.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +200,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B36EF0D11BE6EFA80090CF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-larmadillo",
+					"-lboost_unit_test_framework",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B36EF0D21BE6EFA80090CF3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-larmadillo",
+					"-lboost_unit_test_framework",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B3C96DE71BE6931400751BC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -253,6 +331,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B36EF0D01BE6EFA80090CF3F /* Build configuration list for PBXNativeTarget "test_least_square" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36EF0D11BE6EFA80090CF3F /* Debug */,
+				B36EF0D21BE6EFA80090CF3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B3C96DDD1BE6931400751BC4 /* Build configuration list for PBXProject "ml-practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
