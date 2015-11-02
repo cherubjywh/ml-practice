@@ -3,11 +3,12 @@
 I will be implementing some machine learning algorithms using c++. The list of algorithms I am going to implement includes but restricted to the following:
 
 =======================================
-1. Linear regression
-2. LASSO
-3. Logistic regression
-4. Linear SVM
-5. Perceptron
+1. Linear regression [done]
+1.1 Linear regression using gradient descent
+2. Logistic regression
+3. Linear SVM
+4. Perceptron
+5. LASSO
 6. Previous linear models using SGD
 7. SDGA
 8. ASGD
