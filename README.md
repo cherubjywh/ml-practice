@@ -3,8 +3,9 @@
 I will be implementing some machine learning algorithms using c++. The list of algorithms I am going to implement includes but restricted to the following:
 
 =======================================
-1. Linear regression [done]
-1.1 Linear regression using gradient descent
+1. Linear regression
+i). Normal equation [done], no need to do normalization
+ii). Linear regression using gradient descent, need to perform normalization first
 2. Logistic regression
 3. Linear SVM
 4. Perceptron
