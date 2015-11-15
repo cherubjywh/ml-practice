@@ -7,14 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B314215C1BF9025000A41EEA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B314215B1BF9025000A41EEA /* main.cpp */; };
 		B36EF0D31BE6EFB50090CF3F /* test_least_square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B36EF0C71BE6EE4D0090CF3F /* test_least_square.cpp */; };
 		B36EF0D41BE6F99F0090CF3F /* linear_regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C96DED1BE696D200751BC4 /* linear_regression.cpp */; };
 		B36EF0D61BE6F9C30090CF3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B36EF0D51BE6F9C30090CF3F /* main.cpp */; };
+		B36EF13B1BEE8D180090CF3F /* test_logistic_regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B36EF12F1BEE8CF90090CF3F /* test_logistic_regression.cpp */; };
+		B36EF13F1BEE8DB70090CF3F /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B36EF13D1BEE8D710090CF3F /* utils.cpp */; };
+		B36EF1401BEE8DB70090CF3F /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B36EF13D1BEE8D710090CF3F /* utils.cpp */; };
 		B3C96DEF1BE696D200751BC4 /* linear_regression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3C96DED1BE696D200751BC4 /* linear_regression.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B31421571BF9025000A41EEA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		B36EF0CA1BE6EFA80090CF3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B36EF1321BEE8D0B0090CF3F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -35,16 +57,40 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B31421591BF9025000A41EEA /* TreeSampling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TreeSampling; sourceTree = BUILT_PRODUCTS_DIR; };
+		B314215B1BF9025000A41EEA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B36EF0C71BE6EE4D0090CF3F /* test_least_square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test_least_square.cpp; path = test/test_least_square.cpp; sourceTree = "<group>"; };
 		B36EF0CC1BE6EFA80090CF3F /* test_least_square */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_least_square; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36EF0D51BE6F9C30090CF3F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = core/main.cpp; sourceTree = SOURCE_ROOT; };
+		B36EF12D1BEE8CC00090CF3F /* logistic_regression.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = logistic_regression.cpp; path = linear_model/logistic_regression.cpp; sourceTree = "<group>"; };
+		B36EF12E1BEE8CC00090CF3F /* logistic_regression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = logistic_regression.h; path = linear_model/logistic_regression.h; sourceTree = "<group>"; };
+		B36EF12F1BEE8CF90090CF3F /* test_logistic_regression.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = test_logistic_regression.cpp; path = test/test_logistic_regression.cpp; sourceTree = "<group>"; };
+		B36EF1341BEE8D0B0090CF3F /* test_logistic_regression */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_logistic_regression; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36EF13D1BEE8D710090CF3F /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = util/utils.cpp; sourceTree = "<group>"; };
+		B36EF13E1BEE8D710090CF3F /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = utils.h; path = util/utils.h; sourceTree = "<group>"; };
+		B36EF1411BEE965C0090CF3F /* linear_model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = linear_model.cpp; path = linear_model/linear_model.cpp; sourceTree = "<group>"; };
+		B36EF1421BEE965C0090CF3F /* linear_model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = linear_model.h; path = linear_model/linear_model.h; sourceTree = "<group>"; };
 		B3C96DE21BE6931400751BC4 /* ml-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ml-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C96DED1BE696D200751BC4 /* linear_regression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = linear_regression.cpp; path = linear_model/linear_regression.cpp; sourceTree = "<group>"; };
 		B3C96DEE1BE696D200751BC4 /* linear_regression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linear_regression.h; path = linear_model/linear_regression.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B31421561BF9025000A41EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B36EF0C91BE6EFA80090CF3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36EF1311BEE8D0B0090CF3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,12 +107,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B314215A1BF9025000A41EEA /* TreeSampling */ = {
+			isa = PBXGroup;
+			children = (
+				B314215B1BF9025000A41EEA /* main.cpp */,
+			);
+			path = TreeSampling;
+			sourceTree = "<group>";
+		};
+		B36EF13C1BEE8D410090CF3F /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B36EF13D1BEE8D710090CF3F /* utils.cpp */,
+				B36EF13E1BEE8D710090CF3F /* utils.h */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
 		B3C96DD91BE6931400751BC4 = {
 			isa = PBXGroup;
 			children = (
+				B36EF13C1BEE8D410090CF3F /* util */,
 				B3C96DF01BE6BDED00751BC4 /* test */,
 				B3C96DEC1BE696A000751BC4 /* linear_model */,
 				B3C96DE41BE6931400751BC4 /* core */,
+				B314215A1BF9025000A41EEA /* TreeSampling */,
 				B3C96DE31BE6931400751BC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +141,8 @@
 			children = (
 				B3C96DE21BE6931400751BC4 /* ml-practice */,
 				B36EF0CC1BE6EFA80090CF3F /* test_least_square */,
+				B36EF1341BEE8D0B0090CF3F /* test_logistic_regression */,
+				B31421591BF9025000A41EEA /* TreeSampling */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,8 +159,12 @@
 		B3C96DEC1BE696A000751BC4 /* linear_model */ = {
 			isa = PBXGroup;
 			children = (
+				B36EF1411BEE965C0090CF3F /* linear_model.cpp */,
+				B36EF1421BEE965C0090CF3F /* linear_model.h */,
 				B3C96DED1BE696D200751BC4 /* linear_regression.cpp */,
 				B3C96DEE1BE696D200751BC4 /* linear_regression.h */,
+				B36EF12D1BEE8CC00090CF3F /* logistic_regression.cpp */,
+				B36EF12E1BEE8CC00090CF3F /* logistic_regression.h */,
 			);
 			name = linear_model;
 			sourceTree = "<group>";
@@ -102,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				B36EF0C71BE6EE4D0090CF3F /* test_least_square.cpp */,
+				B36EF12F1BEE8CF90090CF3F /* test_logistic_regression.cpp */,
 			);
 			name = test;
 			sourceTree = "<group>";
@@ -109,6 +181,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B31421581BF9025000A41EEA /* TreeSampling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B314215F1BF9025000A41EEA /* Build configuration list for PBXNativeTarget "TreeSampling" */;
+			buildPhases = (
+				B31421551BF9025000A41EEA /* Sources */,
+				B31421561BF9025000A41EEA /* Frameworks */,
+				B31421571BF9025000A41EEA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreeSampling;
+			productName = TreeSampling;
+			productReference = B31421591BF9025000A41EEA /* TreeSampling */;
+			productType = "com.apple.product-type.tool";
+		};
 		B36EF0CB1BE6EFA80090CF3F /* test_least_square */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B36EF0D01BE6EFA80090CF3F /* Build configuration list for PBXNativeTarget "test_least_square" */;
@@ -124,6 +213,23 @@
 			name = test_least_square;
 			productName = test_least_square;
 			productReference = B36EF0CC1BE6EFA80090CF3F /* test_least_square */;
+			productType = "com.apple.product-type.tool";
+		};
+		B36EF1331BEE8D0B0090CF3F /* test_logistic_regression */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36EF1381BEE8D0B0090CF3F /* Build configuration list for PBXNativeTarget "test_logistic_regression" */;
+			buildPhases = (
+				B36EF1301BEE8D0B0090CF3F /* Sources */,
+				B36EF1311BEE8D0B0090CF3F /* Frameworks */,
+				B36EF1321BEE8D0B0090CF3F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test_logistic_regression;
+			productName = test_logistic_regression;
+			productReference = B36EF1341BEE8D0B0090CF3F /* test_logistic_regression */;
 			productType = "com.apple.product-type.tool";
 		};
 		B3C96DE11BE6931400751BC4 /* ml-practice */ = {
@@ -152,7 +258,13 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Yuyin Sun";
 				TargetAttributes = {
+					B31421581BF9025000A41EEA = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					B36EF0CB1BE6EFA80090CF3F = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B36EF1331BEE8D0B0090CF3F = {
 						CreatedOnToolsVersion = 6.2;
 					};
 					B3C96DE11BE6931400751BC4 = {
@@ -174,17 +286,37 @@
 			targets = (
 				B3C96DE11BE6931400751BC4 /* ml-practice */,
 				B36EF0CB1BE6EFA80090CF3F /* test_least_square */,
+				B36EF1331BEE8D0B0090CF3F /* test_logistic_regression */,
+				B31421581BF9025000A41EEA /* TreeSampling */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B31421551BF9025000A41EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B314215C1BF9025000A41EEA /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B36EF0C81BE6EFA80090CF3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36EF13F1BEE8DB70090CF3F /* utils.cpp in Sources */,
 				B36EF0D31BE6EFB50090CF3F /* test_least_square.cpp in Sources */,
 				B36EF0D41BE6F99F0090CF3F /* linear_regression.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36EF1301BEE8D0B0090CF3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36EF13B1BEE8D180090CF3F /* test_logistic_regression.cpp in Sources */,
+				B36EF1401BEE8DB70090CF3F /* utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +332,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B314215D1BF9025000A41EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B314215E1BF9025000A41EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B36EF0D11BE6EFA80090CF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -222,6 +372,24 @@
 					"-larmadillo",
 					"-lboost_unit_test_framework",
 				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B36EF1391BEE8D0B0090CF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B36EF13A1BEE8D0B0090CF3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -331,6 +499,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B314215F1BF9025000A41EEA /* Build configuration list for PBXNativeTarget "TreeSampling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B314215D1BF9025000A41EEA /* Debug */,
+				B314215E1BF9025000A41EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B36EF0D01BE6EFA80090CF3F /* Build configuration list for PBXNativeTarget "test_least_square" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -338,6 +514,16 @@
 				B36EF0D21BE6EFA80090CF3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36EF1381BEE8D0B0090CF3F /* Build configuration list for PBXNativeTarget "test_logistic_regression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36EF1391BEE8D0B0090CF3F /* Debug */,
+				B36EF13A1BEE8D0B0090CF3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3C96DDD1BE6931400751BC4 /* Build configuration list for PBXProject "ml-practice" */ = {
 			isa = XCConfigurationList;

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TreeSampling.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>ml-practice.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -19,10 +24,25 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>test_logistic_regression.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>B31421581BF9025000A41EEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B36EF0CB1BE6EFA80090CF3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B36EF1331BEE8D0B0090CF3F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
