@@ -13,6 +13,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <set>
 #include <iostream>
 
 using namespace arma;
@@ -44,15 +45,45 @@ auto_ptr<boost::mt19937> multinomial::rng(new boost::mt19937());
 
 class tree_sampler {
 public:
-    tree_sampler(const Mat<double>& weights);
-    void sample_a_tree();
-    void sample_trees(int, Mat<double>&);
-    void sample_trees(int, string);
+    tree_sampler(const vector<vector<double>>& weights);
+    void sample_a_tree(unordered_map<size_t, size_t> &);
+    void sample_trees(size_t, vector<unordered_map<size_t, size_t>>&);
+    void sample_trees(size_t, string);
 private:
-    Mat<double> _weights;
+    vector<vector<double>> _weights;
 };
 
-tree_sampler::tree_sampler(const Mat<double>& weights) {
+tree_sampler::tree_sampler(const vector<vector<double>>& weights) {
+    _weights = weights;
+}
+
+void tree_sampler::sample_trees(size_t N, vector<unordered_map<size_t, size_t> > &trees) {
+    for (size_t i = 0; i < N; ++i) {
+        sample_a_tree(trees[i]);
+    }
+}
+
+void tree_sampler::sample_a_tree (unordered_map<size_t, size_t> &tree) {
+    set<size_t> in_tree;
+    in_tree.insert(0);
+    
+    for (size_t i = 1; i < _weights.size(); ++i) {
+        size_t n = i;
+        set<size_t> temp;
+        while (in_tree.find(n) == in_tree.end()) {
+            temp.insert(n);
+            vector<double> pvals = _weights[n - 1];
+            size_t u = multinomial::get_one(pvals.begin(), pvals.end());
+            tree[n] = u;
+            n = u;
+        }
+        
+        for (auto i : temp) {
+            in_tree.insert(i);
+        }
+        
+    }
+
 }
 
 int main(int argc, const char * argv[]) {
